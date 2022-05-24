@@ -1,0 +1,25 @@
+CREATE TABLE petstore (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price NUMERIC, aisle NUMERIC);
+
+INSERT INTO petstore VALUES (1, "purina", 12, 12.99, 1);
+INSERT INTO petstore VALUES (2, "cat litter", 8, 10.89, 2);
+INSERT INTO petstore VALUES (3, "pigs ears", 20, 3.99, 4);
+INSERT INTO petstore VALUES (4, "catnip", 25, 6.50, 2);
+INSERT INTO petstore VALUES (5, "fish tank", 6, 24.99, 3);
+INSERT INTO petstore VALUES (6, "beta fish", 6, 9.99, 3);
+INSERT INTO petstore VALUES (7, "fish food", 10, 4.50, 3);
+INSERT INTO petstore VALUES (8, "dog chow", 12, 8.65, 1);
+INSERT INTO petstore VALUES (9, "litter box", 5, 19.99, 2);
+INSERT INTO petstore VALUES (10, "tennis balls", 60, 1.99, 4);
+INSERT INTO petstore VALUES (11, "hampsters", 10, 14.50, 5);
+INSERT INTO petstore VALUES (12, "rodent cage", 10, 30.00, 5);
+INSERT INTO petstore VALUES (13, "straw bundles", 10, 5.99, 5);
+INSERT INTO petstore VALUES (14, "dog bed", 5, 21.25, 4);
+INSERT INTO petstore VALUES (15, "cat scratcher", 4, 45.79, 2);
+
+
+--display the database ordered by price. 
+SELECT * FROM store
+ORDER BY price desc; 
+
+--what is the sum of the cost of product.
+SELECT sum(price) FROM petstore;
